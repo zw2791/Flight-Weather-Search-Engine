@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime Flight Search</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <h1>Real-Time Flight Search</h1>
+        <p> <em> Due to limited API access: </em></p>
+        <p> <em>1. This search engine currently only provides flight and weather information from the last update data. </em></p>
+        <p> <em>3. Optional fields may narrow down the search result to 0</em></p>
+
+      <form method = "POST" class="form__fieldset">
+
+          <div class="form__fieldset">
+                <label for="date" class="form__label">Pick a date</label>
+                <input type="date" name="date" id="date" min="2022-04-25" max="2022-04-27">
+          </div>
+
+          <div class="form__fieldset">
+            <label for="departure" class="form__label">Select your departure airport: </label>
+            <select name="departure" id="departure" class="form__input form__select">
+            <option value="EWR">EWR</option>
+            <option value="LGA">LGA</option>
+            <option value="JFK">JFK</option>
+            </select>
+          </div>
+
+
+          <div class="form__fieldset">
+                <label for="arrival" class="form__label">Enter your destination airport:</label>
+                <input type="String" name="arrival" id="arrival" class="form__input" placeholder="e.g. SFO" />
+          </div>
+
+
+          <div class="form__fieldset">
+            <label for="Flight_status" class="form__label"> (Optional) Flight status: </label>
+            <select name="flight_status" id="Flight_status" class="form__input form__select">
+                <option value="none"> </option>
+                <option value="active">Active</option>
+                <option value="scheduled">Scheduled</option>
+                <option value="landed">Landed</option>
+                <option value="cancelled">Cancelled</option>
+                <option value="incident">Incident</option>
+                <option value="diverted">Diverted</option>
+            </select>
+          </div>
+
+          <div class="form__fieldset">
+            <label for="AC" class="form__label">(Optional) Enter your airline company:</label>
+            <input type="String" name="airline" id="AC" class="form__input" placeholder="e.g. JetBlue Airways" />
+          </div>
+
+          <div class="form__fieldset">
+            <input
+            class="form__submit form__input"
+            type="submit"
+            value="Search!"
+            />
+          </div>
+
+      </form>
+  </body>
+</html>
