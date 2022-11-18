@@ -36,7 +36,6 @@ APIs were selected as the data source since they can provide large size real-tim
 
 ![accesstomongo](https://user-images.githubusercontent.com/102703087/202591779-65f49ece-9ca1-45b0-a80c-d843ad13a480.jpg)
 ![images](https://user-images.githubusercontent.com/102703087/202591839-c1ee6156-b48b-466e-ac9a-a41a02c0523c.png)
-![bfe23e80-e7d0-11e9-97e0-4eec55c9f883](https://user-images.githubusercontent.com/102703087/202591989-e166d198-20cd-4992-b2b7-9108b2a82419.png)
 
 
   <li><b>Extract & Load</b></li>
